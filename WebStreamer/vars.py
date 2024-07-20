@@ -45,3 +45,9 @@ class Var(object):
     MODE = environ.get("MODE", "primary")
     SECONDARY = True if MODE.lower() == "secondary" else False
     LINK_LIMIT = int(environ.get("LINK_LIMIT")) if "LINK_LIMIT" in environ else None
+
+
+    #SHOTENER FUNCTION
+    SHORTENER = environ.get('SHORTENER', False)
+    SHORTLINK_API = environ.get('SHORTLINK_API')
+    SHORTLINK_UR = environ.get('SHORTLINK_UR')
